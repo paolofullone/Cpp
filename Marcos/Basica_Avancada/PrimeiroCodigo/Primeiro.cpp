@@ -2,6 +2,7 @@
 // A diretiva #include é usada para incluir arquivos de cabeçalho iostream em um programa C ++.
 // ctrl + enter no iostream mostra o código
 #include <tchar.h>
+// tchar.h aqui será usado para configurar a saída em português e para usar o _tsetlocale
 
 int main()
 // função principal do programa
