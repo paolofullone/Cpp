@@ -1,10 +1,12 @@
 #include <iostream>
 // A diretiva #include é usada para incluir arquivos de cabeçalho iostream em um programa C ++.
 // ctrl + enter no iostream mostra o código
+#include <tchar.h>
 
 int main()
 // função principal do programa
 {
+	_tsetlocale(LC_ALL, _T("Portuguese"));
 	std::cout << "Paolo Enrico Iacono Fullone - 44 anos" << std::endl;
 	// cout é o comando de saída de dados, neste caso está solicitando para imprimir na tela o texto entre aspas duplas
 	// endl é o comando de quebra de linha
