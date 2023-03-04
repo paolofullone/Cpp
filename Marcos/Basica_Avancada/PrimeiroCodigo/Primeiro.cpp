@@ -21,7 +21,7 @@ int main()
 		<< "C++" << "\n";
 	system("color 0B");
 	// Opcional no VS 2022.
-	/*system("PAUSE");*/
+	system("PAUSE");
 	// chama o shell do windows e coloca o comando pause, funciona maiúscula e minúscula nesse config.
 	return 0;
 	// return 0 é o comando de retorno da função principal para indicar que o programa foi executado com sucesso
