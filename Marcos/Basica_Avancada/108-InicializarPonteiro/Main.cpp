@@ -21,10 +21,11 @@ int main()
 	// para colocar algo dentro da variável ponteiro
 	Numero = 102;
 	ptr = &Numero; //aqui estamos colocando o endereço de memória da variável Número dentro da variável ponteiro
-	std::cout << "\nEndereço de ptr apontando para Número, sendo que Número recebeu o valor 102: " << &ptr << std::endl;
+	std::cout << "\nEndereço de memória de ptr apontando para Número, sendo que Número recebeu o valor 102: " << &ptr << std::endl;
 	std::cout << "Valor de ptr: " << ptr << std::endl;
 
-	std::cout << "Endereço de Número: " << &Numero;
+	std::cout << "Endereço de memória de Número que é igual ao VALOR de ptr: " << &Numero;
+	std::cout << "\nNotar que o VALOR de ptr é o endereço de memória de Número, mas o endereço de memória de PTR é DIFERENTE do endereço de memória de Número" << std::endl;
 	std::cout << "\nValor de Número: " << Numero << "\n";
 
 
