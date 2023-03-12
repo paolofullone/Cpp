@@ -10,7 +10,7 @@ int main()
 	//primeiro Ano recebe o primeiro indice de Anos que é 1998
 	// depois recebe 2011, 2014, 2017 e 2020
 	//é como um for normal mas ele percorre sem índice e de forma automatica
-	for (auto Ano : Anos)
+	for (auto Ano : Anos) // poderia passar o vetor direto no lugar de Anos que funcionaria também.
 	{
 		std::cout << Ano << "\n";
 	}
