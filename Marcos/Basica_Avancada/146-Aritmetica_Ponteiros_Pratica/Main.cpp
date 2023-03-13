@@ -4,11 +4,11 @@ int main()
 {
 	int Vetor[] = { 1, 23, -78, 900, 234 };
 	int* ptr;
-	// Neste momento ptr passa a apontar para o endereço do Vetor. Lembre-se que o endereço de uma variável é o primeiro endereço da mesma
-	// Logo isso é o mesmo que ptr = &Vetor[0];
+	// Neste momento ptr passa a apontar para o endereï¿½o do Vetor. Lembre-se que o endereï¿½o de uma variï¿½vel ï¿½ o primeiro endereï¿½o da mesma
+	// Logo isso ï¿½ o mesmo que ptr = &Vetor[0];
 	// ptr = Vetor;
 	ptr = Vetor;
-	//O nome de um vetor é o mesmo que &Vetor[0]
+	//O nome de um vetor ï¿½ o mesmo que &Vetor[0]
 
 	std::cout << "Vetor: ";
 	for (int i = 0; i < std::size(Vetor); i++)
@@ -25,33 +25,33 @@ int main()
 	std::cout << "\n*** Enderecos Com Aritmetica de Ponteiros***\n";
 	std::cout << "Valor Contido em ptr: " << ptr << "\n";
 	std::cout << "(ptr + 0) END: " << (ptr + 0) << " Valor: " << *(ptr + 0) << "\n";
-	// (ptr + 0 ) pega o endereço de ptr e adiciona zero logo é o endereço do primeiro elemento do vetor, já que ptr aponta para o primeiro elemento ptr = Vetor ou ptr = &Vetor[0]
+	// (ptr + 0 ) pega o endereï¿½o de ptr e adiciona zero logo ï¿½ o endereï¿½o do primeiro elemento do vetor, jï¿½ que ptr aponta para o primeiro elemento ptr = Vetor ou ptr = &Vetor[0]
 
 	std::cout << "(ptr + 1) END: " << (ptr + 1) << " Valor: " << *(ptr + 1) << "\n";
-	// (ptr + 1) pega o endereço de ptr e desloca uma unidade de tamanho do tipo do ponteiro (se for int, sãp 4 bytes) logo ptr + 1 é o mesmo que ptr + 4 bytes que vai apontar para o próximo item do array.
-	// ptr + 1 NÃO modifica o endereço do ponteiro. ptr = ptr + 1, aí sim modificaria o valor do ponteiro.
-	// como ptr é do tipo int, ou seja aponta para variáveis do tipo int, nesta arquitetura ele vai somar 4 bytes ao endereço de ptr
+	// (ptr + 1) pega o endereï¿½o de ptr e desloca uma unidade de tamanho do tipo do ponteiro (se for int, sï¿½p 4 bytes) logo ptr + 1 ï¿½ o mesmo que ptr + 4 bytes que vai apontar para o prï¿½ximo item do array.
+	// ptr + 1 Nï¿½O modifica o endereï¿½o do ponteiro. ptr = ptr + 1, aï¿½ sim modificaria o valor do ponteiro.
+	// como ptr ï¿½ do tipo int, ou seja aponta para variï¿½veis do tipo int, nesta arquitetura ele vai somar 4 bytes ao endereï¿½o de ptr
 
 	std::cout << "(ptr + 2) END: " << (ptr + 2) << " Valor: " << *(ptr + 2) << "\n";
-	// (ptr + 2) pega o endereço de ptr e desloca duas unidades de tamanho do tipo do ponteiro como ptr é do tipo int, ou seja aponta para variáveis do tipo int, nesta arquitetura ele vai somar 8 bytes ao endereço de ptr
-	// se estiver na primeira posição do array, vai avançar para a terceira.
+	// (ptr + 2) pega o endereï¿½o de ptr e desloca duas unidades de tamanho do tipo do ponteiro como ptr ï¿½ do tipo int, ou seja aponta para variï¿½veis do tipo int, nesta arquitetura ele vai somar 8 bytes ao endereï¿½o de ptr
+	// se estiver na primeira posiï¿½ï¿½o do array, vai avanï¿½ar para a terceira.
 
-	// *(ptr + 2) faz o desreferenciamento do ponteiro. Ou seja primeiro ele faz a artimética do ponteiro e vai somar 8 bytes a ptr e com isso vai chegar até o elemento de índice 2
+	// *(ptr + 2) faz o desreferenciamento do ponteiro. Ou seja primeiro ele faz a artimï¿½tica do ponteiro e vai somar 8 bytes a ptr e com isso vai chegar atï¿½ o elemento de ï¿½ndice 2
 
 	std::cout << "(ptr + 3) END: " << (ptr + 3) << " Valor: " << *(ptr + 3) << "\n";
 	// idem para os demais comandos!
 	std::cout << "(ptr + 4) END: " << (ptr + 4) << " Valor: " << *(ptr + 4) << "\n";
 
-	// MAs observe que o valor de ptr não mudou.. O que está dentro de ptr não irá mudar!
-	// pois o comando apenas usa o valor de ptr! O comando não está indicando para que seja mudado nada na memória
-	// Para isso seria: ptr = ptr + 2 por exemplo... ou através de ++ ou --
-	// Ex: ptr++ agora sim iria mudar pois ptr++ é o  mesmo que ptr = ptr + 1;
+	// MAs observe que o valor de ptr nï¿½o mudou.. O que estï¿½ dentro de ptr nï¿½o irï¿½ mudar!
+	// pois o comando apenas usa o valor de ptr! O comando nï¿½o estï¿½ indicando para que seja mudado nada na memï¿½ria
+	// Para isso seria: ptr = ptr + 2 por exemplo... ou atravï¿½s de ++ ou --
+	// Ex: ptr++ agora sim iria mudar pois ptr++ ï¿½ o  mesmo que ptr = ptr + 1;
 	std::cout << "Valor Contido em ptr: " << ptr << "\n";
-	// obs: (ptr + 0) é o mesmo que ptr 
+	// obs: (ptr + 0) ï¿½ o mesmo que ptr 
 	ptr++;
 	std::cout << "Valor Contido em ptr depois de ptr++: " << ptr << "\n";
-	// agora mudou pois ptr++ é o mesmo que ptr + 1 que na aritmética de ponteiros é pegar
-	// o valor de ptr e somar o tamanho do tipo de dados que ele aponta que no caso é de 4 bytes!
+	// agora mudou pois ptr++ ï¿½ o mesmo que ptr + 1 que na aritmï¿½tica de ponteiros ï¿½ pegar
+	// o valor de ptr e somar o tamanho do tipo de dados que ele aponta que no caso ï¿½ de 4 bytes!
 
 	ptr = &Vetor[3]; //ptr passa a apontar para 900
 	ptr--; //decrementa e aponta para -78; ou Vetor[2];
@@ -64,5 +64,6 @@ int main()
 }
 
 
-// vetor[i] é o mesmo que *(vetor + i)
+// vetor[i] ï¿½ o mesmo que *(vetor + i)
 // os 3 ultimos resultados no console mostram o incremento de 4 bytes
+// os 2 primeiros dÃ¡ pra somar usando a calculadora "programador" do windows, que tem suporte a operaÃ§Ãµes com hexadecimais.
