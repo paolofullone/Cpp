@@ -18,7 +18,7 @@ int main()
 	std::cout << "\n";
 
 
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < std::size(Vetor); i++)
 	{
 		std::cout << "Vetor[" << i << "] Endereco: " << &Vetor[i] << " Valor: " << Vetor[i] << "\n";
 	}
@@ -65,3 +65,4 @@ int main()
 
 
 // vetor[i] é o mesmo que *(vetor + i)
+// os 3 ultimos resultados no console mostram o incremento de 4 bytes
